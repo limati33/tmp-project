@@ -1,133 +1,83 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Приглашение на юбилей</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-      background-color: #fffaf5;
-      color: #333;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero {
-      background: url('hero.jpg') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 5px #000;
-      font-size: 2em;
-      flex-direction: column;
-    }
-    .invitation {
-      background: #fefefe;
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.2em;
-    }
-    .image-section img {
-      width: 80%;
-      max-width: 700px;
-      border-radius: 10px;
-    }
-    .calendar {
-      font-size: 2em;
-      font-weight: bold;
-      color: #a52a2a;
-    }
-    .address {
-      font-size: 1.5em;
-      color: #444;
-    }
-    .guest {
-      font-size: 1.5em;
-      font-style: italic;
-      color: #222;
-    }
-    .poll button {
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 1.1em;
-      cursor: pointer;
-    }
-    .slideshow img {
-      width: 80%;
-      max-width: 600px;
-      border-radius: 10px;
-      transition: opacity 1s;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қыз ұзату - Шақыру</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Қыз ұзату тойына шақыру</h1>
+        <p>Құрметті қонақтар, сіздерді біздің қызымыздың ұзату тойына шақырамыз!</p>
+        <p>Бұл ерекше күнді бірге тойлайық!</p>
+    </header>
 
-<!-- 1. Фото с текстом -->
-<section class="hero">
-  <div>🎉 10 лет вместе! 🎉<br>Приглашаем на юбилей!</div>
-</section>
+    <section class="event-details">
+      <div class="tmp">
+        <h2>Той мәліметтері</h2>
+        
+        <div class="calendar">
+            <div class="calendar-header">Маусым 2025</div>
+            <div class="calendar-days">
+                <div class="calendar-day">Дс</div>
+                <div class="calendar-day">Сс</div>
+                <div class="calendar-day">Ср</div>
+                <div class="calendar-day">Бс</div>
+                <div class="calendar-day">Жм</div>
+                <div class="calendar-day">Сб</div>
+                <div class="calendar-day">Жс</div>
+            </div>
+            <div class="calendar-dates" id="calendar-dates"></div>
+        </div>
+      </div>
+        
+        <p><strong>Уақыты:</strong> 18:00</p>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185984.8028217357!2d76.71635554465847!3d43.25115890671203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883724918b4e671%3A0x2d7d5fb59b122a3d!2z0YDQtdGB0YLQvtGA0LDQvSDQkNC6LdCh0LDRgNCw0Lk!5e0!3m2!1sru!2skz!4v1747111273407!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy" allowfullscreen="" loading="lazy"></iframe>
+            <p class="location-info"><strong>Орны:</strong> Алматы қаласы, "Ақ Сарай" мейрамханасы</p>
+        </div>
+    </section>
 
-<!-- 2. Текст приглашения -->
-<section class="invitation">
-  <div>
-    <p>Дорогой друг!</p>
-    <p>Приглашаем тебя отпраздновать наш 10-летний юбилей! Это будет незабываемый вечер в кругу близких людей, с музыкой, угощениями и множеством сюрпризов.</p>
-    <p>Мы будем очень рады видеть тебя!</p>
-  </div>
-</section>
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="https://i.pinimg.com/736x/b3/d6/17/b3d6175f9b8a5a660f2ead90c002a784.jpg" alt="Той фото 1">
+            <img src="https://i.pinimg.com/736x/5a/fe/58/5afe589b5a0d0461b183db42ddd4d1a6.jpg" alt="Той фото 2">
+            <img src="https://i.pinimg.com/736x/98/ee/87/98ee87d27ef50cb4f412fb6137e498d6.jpg" alt="Той фото 3">
+            <img src="https://i.pinimg.com/736x/01/ea/72/01ea72246cd2293195a6b205cc126959.jpg" alt="Той фото 4">
+            <img src="https://i.pinimg.com/736x/ec/6f/ab/ec6fab5894bd873e9b250daf3db3f811.jpg" alt="Той фото 5">
+            <img src="https://i.pinimg.com/736x/83/c1/72/83c1725672bd92300559ae329717e890.jpg" alt="Той фото 6">
+        </div>
+        <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+    </section>
 
-<!-- 3. Фото -->
-<section class="image-section">
-  <img src="photo1.jpg" alt="Фото юбиляров">
-</section>
+    <section class="wishes">
+        <h2>Жаңа отбасымызға арнап</h2>
+        <p><i class="fas fa-heart" style="color: #d4a5a5;"></i> Жаңа жолдарыңыз ашық болсын, бір-біріңізге қуаныш әкеліңіз!</p>
+        <p><i class="fas fa-heart" style="color: #d4a5a5;"></i> Үйіңізге бақыт, бейбітшілік толып, махаббат мәңгі жаңарсын!</p>
+        <p><i class="fas fa-heart" style="color: #d4a5a5;"></i> Біріңіз екіншіңіз үшін қанат болып, бірге ұшыңыз!</p>
+    </section>
 
-<!-- 4. Календарь -->
-<section class="calendar">
-  📅 Суббота, 15 июня 2025
-</section>
+    <section class="rsvp-section">
+        <h2>Қатысуыңызды растаңыз</h2>
+        <input type="text" id="name" placeholder="Аты-жөніңіз">
+        <select id="attendance">
+            <option value="yes">Келемін</option>
+            <option value="no">Келе алмаймын</option>
+        </select>
+        <button onclick="submitRSVP()">Жіберу</button>
+        <p id="rsvp-message"></p>
+    </section>
 
-<!-- 5. Место -->
-<section class="address">
-  📍 Ресторан "Вечерняя Звезда", г. Москва, ул. Счастливая, 10
-</section>
+    <footer>
+        <p>Біздің тойымызға қош келдіңіздер!</p>
+    </footer>
 
-<!-- 6. Фото -->
-<section class="image-section">
-  <img src="photo2.jpg" alt="Место проведения">
-</section>
-
-<!-- 7. Главный гость -->
-<section class="guest">
-  ⭐ Специальный гость вечера — певец Иван Луч!
-</section>
-
-<!-- 8. Опрос -->
-<section class="poll">
-  <p>Придёшь?</p>
-  <button onclick="alert('Здорово! Ждём тебя!')">Да, конечно!</button>
-  <button onclick="alert('Очень жаль! Надеемся, увидимся в другой раз')">Увы, не смогу</button>
-</section>
-
-<!-- 9. Слайд шоу -->
-<section class="slideshow">
-  <img id="slide" src="slide1.jpg" alt="Слайд 1">
-</section>
-
-<script>
-  // Простое слайд-шоу
-  const slides = ['slide1.jpg', 'slide2.jpg', 'slide3.jpg'];
-  let index = 0;
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    document.getElementById('slide').src = slides[index];
-  }, 3000);
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
