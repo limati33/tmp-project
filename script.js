@@ -52,3 +52,19 @@ function generateCalendar() {
 }
 
 window.onload = generateCalendar;
+
+const pauseButton = document.getElementById('pauseButton');
+const backgroundMusic = document.getElementById('backgroundMusic');
+let isPlaying = true;
+
+pauseButton.addEventListener('click', function() {
+  if (isPlaying) {
+    backgroundMusic.pause();
+    pauseButton.textContent = 'Продолжить';
+    isPlaying = false;
+  } else {
+    backgroundMusic.play();
+    pauseButton.textContent = 'Пауза';
+    isPlaying = true;
+  }
+});
